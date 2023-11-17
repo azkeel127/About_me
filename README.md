@@ -1,1 +1,1 @@
-[Entra a La pagina](docs/GdsIdx.html)
+[Entra a La pagina](/GdsIdx.html)
