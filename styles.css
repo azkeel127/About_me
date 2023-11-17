@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    color: azure;
+    background-color: transparent;
+}
+
+h2 {
+    text-align: center;
+    color: azure;
+    background-color: transparent;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('found.gif');
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid #3498db;
+    background-color: transparent;
+    height: 50px;
+    width: 100%;
+    max-width: 200px;
+    color: #3498db;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px; /* Añadido un espacio entre botones */
+}
+
+footer {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.i1 {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 80px; /* Aumenta el tamaño de la imagen para que sea más visible en dispositivos más pequeños */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+@media only screen and (min-width: 600px) {
+    /* Estilos específicos para pantallas más grandes (computadoras) */
+    .btn {
+        width: 200px; /* Restaura el ancho original para computadoras */
+    }
+}
