@@ -29,7 +29,7 @@ body {
     color: #3498db;
     font-size: 1.5em;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-    margin-bottom: 10px; /* Añadido un espacio entre botones */
+    margin-bottom: 10px;
 }
 
 footer {
@@ -41,14 +41,12 @@ footer {
 
 .i1 {
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    width: 80px; /* Aumenta el tamaño de la imagen para que sea más visible en dispositivos más pequeños */
-    height: auto; /* Ajusta la altura automáticamente */
-}
+    margin: 0 auto; 
+    width: 80px; 
+    height: auto;
 
 @media only screen and (min-width: 600px) {
-    /* Estilos específicos para pantallas más grandes (computadoras) */
     .btn {
-        width: 200px; /* Restaura el ancho original para computadoras */
+        width: 200px; 
     }
 }
