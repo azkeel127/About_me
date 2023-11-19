@@ -21,29 +21,36 @@ body {
 
 .btn {
     cursor: pointer;
-    border: 1px solid #3498db;
+    border: 1px solid rgb(78, 4, 56);
     background-color: transparent;
     height: 50px;
     width: 100%;
     max-width: 200px;
-    color: #3498db;
+    color: #190564;
     font-size: 1.5em;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 6px rgba(129, 2, 134, 0.6);
     margin-bottom: 10px;
 }
 
 footer {
-    background-color: transparent;
-    color: black;
+    font-size: 10px;
+    color: white;
     padding: 10px;
     text-align: center;
+    position: relative;
 }
 
 .i1 {
     display: block;
     margin: 0 auto; 
     width: 80px; 
-    height: auto;
+    height: auto; 
+}
+.txt1{
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
 
 @media only screen and (min-width: 600px) {
     .btn {
