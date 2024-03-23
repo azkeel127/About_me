@@ -3,43 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WElCOME</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ninjabrine</title>
+    <link rel="icon" type="image/png" href="image.png">
+    <style>
+        /* Estilos globales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #464343;
+            color: #ffffff; /* Cambiado a blanco para mejorar legibilidad */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        /* Estilos para encabezado */
+        header {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #2c0b47; /* Cambiado color de fondo */
+        }
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #ffffff; /* Cambiado a blanco para mejorar legibilidad */
+            overflow: hidden; /* Evitar que el texto sobresalga */
+            white-space: nowrap; /* Evitar que el texto se divida */
+            animation: typing 2s steps(10, end) infinite; /* Animación de escritura en bucle */
+        }
+        /* Animación de escritura */
+        @keyframes typing {
+            from {
+                width: 0; /* Comienza desde un ancho de 0 */
+            }
+            to {
+                width: 100%; /* Se expande hasta el 100% del ancho */
+            }
+        }
+        /* Estilos para barra de navegación */
+        nav {
+            text-align: center; /* Alinear el contenido al centro */
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Alinear elementos al centro */
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        nav a {
+            font-size: 14px;
+            padding: 10px 15px;
+            color: #ffffff; 
+            text-decoration: none; 
+        }
+        nav a:hover {
+            background-color: #555; 
+        }
+        /* Estilos para secciones */
+        section {
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+        section h2 {
+            color: #ffffff; 
+        }
+        section p {
+            color: #cccccc; 
+        }
+        /* Estilos para iconos sociales */
+        .social-icons {
+            display: flex;
+            justify-content: center; 
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px; 
+        }
+        .social-icons a img {
+            width: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease; 
+        }
+        .social-icons a img:hover {
+            transform: scale(1.1); 
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media only screen and (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+            nav a {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+            section {
+                padding: 20px 10px;
+            }
+            .social-icons a img {
+                width: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <h1> bienvenid@ a mi pagina  <img class="i1" src="icon.png" alt="gds Icon"></h1>
-    
-<div class="txt1">
-    <p>Holaa ,  me puedes decir azkeel o ninjabrine :) como  gustes llamarme , tengo varios proyectos como:
-        <li>
-            ser youtuber
-        </li>
-        <li>
-            aprender sobre ciberseguridad, programacion y desarrollo web
-        </li>
-        <li>
-            hacer que mi comunidad de discord difunda sus objetivos 
-        </li>
-        uno de mis proyectos mas grandes es galaxy , pues en este entran casi todos menos mi canal principal de youtube ,
-         su objetivo es erradicar contenido ilegal de internet(cp,gor3, pedofilia y z00filia) para hacer de internet un lugar mejor , espero me puedas apoyar.
-         aqui abajo te dejare los enlaces a mis proyectos, discord de galaxy, canales de youtube y instagram , gracias por leer.
-    </p>
-</div>
-    <center> <a href="https://discord.gg/8uptZkHD3A" target="_blank">
-        <button class="btn">Galaxy</button>
-    </a>
-    <a href="https://www.youtube.com/@ninjabrine7YT" target="_blank">
-        <button class="btn">Ninjabrine</button>
-    </a>
-    <a href="https://www.youtube.com/channel/UCP9PQdU-rkQ8Ok0dXhFu2jg">
-        <button class="btn">Azkeel</button>
-    </a>
-    <a href="https://www.instagram.com/ninjabrineyt/">
-        <button class="btn">Instagram</button>
-    </a>
-</center>
-    
+    <header>
+        <h1>ninjabrine</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy ninjabrine, programador, gamer y fundador de S.O.A, GalaxySquad y Tuki. Aquí abajo te dejo mis redes sociales para que eches un vistazo :)</p>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="social-icons">
+            <a href="https://discord.gg/V9qAZ6YST6" target="_blank" title="Discord"><img src="DIscord.png" alt="discord"></a>
+            <a href="https://www.twitch.tv/ninjabrineuwu" target="_blank" title="Canal de Twitch"><img src="twitch.png" alt="Canal de twitch"></a>
+            <a href="https://www.instagram.com/azk_.eel/" target="_blank" title="Perfil ig"><img src="igm.png" alt="Perfil Instagram" style="width: 35px;"></a>
+            <a href="https://www.youtube.com/channel/UCP9PQdU-rkQ8Ok0dXhFu2jg" target="_blank" title="YouTube"><img src="yt.png" alt="YouTube"></a>
+        </div>
+    </section>
 </body>
-<footer>Ninjabrine and azkeel is here</footer>
 </html>
+
+
