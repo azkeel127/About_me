@@ -16,7 +16,7 @@ body {
 header {
   text-align: center;
   padding: 60px 10px;
-  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  background: linear-gradient(45deg, #8a2387, #e94057, #f27121); /* Morado y Rojo */
   color: #ffffff;
 }
 
@@ -42,7 +42,7 @@ header h1 {
 nav {
   text-align: center;
   margin-top: 20px;
-  background: linear-gradient(45deg, #141E30, #243B55);
+  background: linear-gradient(45deg, #3a1c71, #d76d77, #ffaf7b); /* Morado y Rojo */
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -64,7 +64,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #f0a500;
+  background-color: #e94057;
   transform: scale(1.1);
   border-radius: 5px;
 }
@@ -79,13 +79,13 @@ section {
 }
 
 section h2 {
-  color: #ff4b2b;
+  color: #e94057; /* Rojo */
   font-size: 2.5rem;
 }
 
 section p {
   color: #dddddd;
-  border: 2px solid #ff4b2b;
+  border: 2px solid #8a2387; /* Morado */
   padding: 15px;
   background-color: #333333;
   border-radius: 10px;
@@ -166,16 +166,16 @@ section {
 article {
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ff4b2b;
+  border: 1px solid #e94057; /* Rojo */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 75, 43, 0.2);
+  box-shadow: 0 0 10px rgba(233, 64, 87, 0.2); /* Sombra roja */
   background-color: #282828;
 }
 
 article h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #ff4b2b;
+  color: #e94057; /* Rojo */
 }
 
 article p {
