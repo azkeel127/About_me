@@ -20,7 +20,6 @@ header {
   padding: 60px 10px;
   background: linear-gradient(45deg, #4b0082, #8a2be2); /* Negro y Morado */
   color: #ffffff;
-  animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
@@ -29,7 +28,7 @@ header h1 {
   overflow: hidden;
   white-space: nowrap;
   border-right: .15em solid #8a2be2;
-  animation: typing 3.5s steps(30, end) 1s infinite, blink-caret .75s step-end infinite;
+  animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -42,11 +41,6 @@ header h1 {
   50% { border-color: #8a2be2 }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
-}
-
 nav {
   text-align: center;
   margin-top: 20px;
@@ -54,9 +48,12 @@ nav {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 2s ease-in-out 0.5s;
-  animation-fill-mode: forwards;
-  opacity: 0;
+  animation: fadeInNav 1.5s ease-out forwards;
+}
+
+@keyframes fadeInNav {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 nav ul {
@@ -71,14 +68,13 @@ nav a {
   padding: 10px 20px;
   color: #fff;
   text-decoration: none;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
   background-color: #8a2be2;
   transform: scale(1.1);
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(138, 43, 226, 0.6);
 }
 
 section {
@@ -88,28 +84,23 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease-in-out 1s forwards;
+  animation: fadeInSection 1.5s ease-out forwards;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes fadeInSection {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 section h2 {
   color: #8a2be2; /* Morado */
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  animation: fadeIn 2s ease-in-out 1.5s forwards;
-  opacity: 0;
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 section p {
@@ -118,21 +109,29 @@ section p {
   padding: 15px;
   background-color: #333333;
   border-radius: 10px;
-  animation: fadeIn 2s ease-in-out 2s forwards;
-  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  animation: fadeIn 2s ease-in-out 2.5s forwards;
-  opacity: 0;
+  animation: fadeInIcons 1.5s ease-out forwards;
+}
+
+@keyframes fadeInIcons {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .social-icons a {
   margin: 0 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .social-icons a img {
@@ -142,7 +141,6 @@ section p {
 
 .social-icons a img:hover {
   transform: scale(1.3);
-  box-shadow: 0 4px 6px rgba(138, 43, 226, 0.6);
 }
 
 @media only screen and (max-width: 600px) {
@@ -161,14 +159,34 @@ section p {
   }
 }
 
+header, nav {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  transform: translateX(-100%);
+  animation: slideInSection 1s forwards;
+}
+
+@keyframes slideInSection {
+  to {
+    transform: translateX(0);
+  }
+}
+
 #blog {
   padding: 40px 20px;
   text-align: center;
   background-color: #1f1f1f;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 2s ease-in-out 3s forwards;
-  opacity: 0;
 }
 
 .blog-posts {
@@ -184,8 +202,12 @@ article {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(138, 43, 226, 0.2); /* Sombra morada */
   background-color: #282828;
-  animation: fadeIn 2s ease-in-out 3.5s forwards;
-  opacity: 0;
+  animation: fadeInArticle 1.5s ease-out forwards;
+}
+
+@keyframes fadeInArticle {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 article h3 {
