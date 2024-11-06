@@ -142,4 +142,46 @@ header, nav {
 
 section {
   transform: translateX(-100%);
-  animation
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+#blog {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e94057; /* Rojo */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(233, 64, 87, 0.2); /* Sombra roja */
+  background-color: #282828;
+}
+
+article h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e94057; /* Rojo */
+}
+
+article p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #dddddd;
+}
