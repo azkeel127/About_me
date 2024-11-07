@@ -18,12 +18,12 @@ body {
 header {
   text-align: center;
   padding: 8vw 5%;
-  background: linear-gradient(45deg, #4b0082, #8a2be2); /* Black and Purple */
+  background: linear-gradient(45deg, #4b0082, #8a2be2); 
   color: #ffffff;
 }
 
 header h1 {
-  font-size: 8vw; /* Using viewport units for font size */
+  font-size: 8vw; 
   margin-bottom: 10px;
   overflow: hidden;
   white-space: nowrap;
@@ -44,7 +44,7 @@ header h1 {
 nav {
   text-align: center;
   margin-top: 2vw;
-  background: linear-gradient(45deg, #2e2e2e, #4b0082, #8a2be2); /* Black and Purple */
+  background: linear-gradient(45deg, #2e2e2e, #4b0082, #8a2be2); 
   padding: 4vw 3%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -64,7 +64,7 @@ nav ul {
 }
 
 nav a {
-  font-size: 2vw; /* Adjusting font size for responsiveness */
+  font-size: 2vw; 
   padding: 2vw 4vw;
   color: #fff;
   text-decoration: none;
@@ -93,8 +93,8 @@ section {
 }
 
 section h2 {
-  color: #8a2be2; /* Purple */
-  font-size: 5vw; /* Adjusted for responsiveness */
+  color: #8a2be2; 
+  font-size: 5vw; 
   animation: slideIn 1.5s ease-out forwards;
 }
 
@@ -105,7 +105,7 @@ section h2 {
 
 section p {
   color: #dddddd;
-  border: 2px solid #8a2be2; /* Purple */
+  border: 2px solid #8a2be2; 
   padding: 2vw;
   background-color: #333333;
   border-radius: 10px;
@@ -145,7 +145,7 @@ section p {
 
 @media only screen and (max-width: 600px) {
   header h1 {
-    font-size: 6vw; /* Smaller font size on mobile */
+    font-size: 6vw; 
   }
   nav a {
     padding: 4vw 6vw;
@@ -155,7 +155,7 @@ section p {
     padding: 4vw 2vw;
   }
   .social-icons a img {
-    width: 20vw; /* Adjusting size for mobile */
+    width: 20vw; 
   }
 }
 
@@ -198,7 +198,7 @@ section {
 article {
   margin: 5vw;
   padding: 5vw;
-  border: 1px solid #8a2be2; /* Purple */
+  border: 1px solid #8a2be2; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(138, 43, 226, 0.2); 
   background-color: #282828;
